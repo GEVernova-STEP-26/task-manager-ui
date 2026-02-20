@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Task Manager</h1>
+
+    <div class="card">
+        <h2>Create Task</h2>
+
+        <div class="form-row">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="description" placeholder="Description">
+        </div>
+
+        <div class="form-row">
+            <select id="category"></select>
+            <select id="priority"></select>
+            <select id="user"></select>
+        </div>
+
+        <button class="primary-btn" onclick="createTask()">Create Task</button>
+    </div>
+
+    <div class="card">
+        <h2>All Tasks</h2>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
